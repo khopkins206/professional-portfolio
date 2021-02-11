@@ -1,0 +1,102 @@
+
+body{
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  max-height: 80px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+ 
+  font-size: 20px;
+  color: white;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 40px;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a:before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+  opacity: 50%;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+#hello{
+  height: calc(100vh - 100px);
+  width: 60%;
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hello h1{
+  font-size: 60px;
+}
+
+#hello h2{
+  font-size: 40px;
+}
+#aboutme, #portfolio, #resume, #contact{
+  height: 100vh;
+  width: 60%;
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.headshot {
+  height: 200px;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
