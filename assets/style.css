@@ -1,5 +1,4 @@
-
-body{
+body {
   font-family: sans-serif;
   font-weight: 300;
 }
@@ -24,7 +23,6 @@ nav {
 }
 
 nav ul {
- 
   font-size: 20px;
   color: white;
 }
@@ -64,39 +62,94 @@ nav a:hover::before {
   width: 100%;
 }
 
-#hello{
+#hello {
   height: calc(100vh - 100px);
   width: 60%;
   margin: 0 auto;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#hello h1{
-  font-size: 60px;
-}
-
-#hello h2{
-  font-size: 40px;
-}
-#aboutme, #portfolio, #resume, #contact{
-  height: 100vh;
-  width: 60%;
-  margin: 0 auto;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.headshot {
-  height: 200px;
-}
-
-footer{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#hello h1 {
+  font-size: 60px;
+}
+
+#hello h2 {
+  font-size: 40px;
+}
+
+#portfolio,
+#aboutme,
+#resume,
+#contact {
+  height: 100vh;
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio h2 {
+  font-size: 50px;
+  padding: 100px;
+}
+
+.coderefactor h3 {
+  font-size: 40px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-left: 150px;
+}
+
+#coderefactorimg {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  height: 300px;
+}
+
+.portfolio p {
+  font-size: 20px;
+}
+
+.aboutme h2 {
+  font-size: 50px;
+  padding-bottom: 100px;
+}
+
+#headshot {
+  height: 200px;
+  float: left;
+  padding-right: 50px;
+}
+
+.aboutme h3 {
+  font-size: 50px;
+  width: 50%;
+  padding-top: 200px;
+  white-space: nowrap;
+}
+
+#techinfo {
+  padding-top: 100px;
+}
+
+.resume h2 {
+  font-size: 50px;
+}
+
+#resumebutton {
+  padding: 8px;
+  color: #444;
+  background-color: transparent;
+  border: 2px solid #444;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

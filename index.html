@@ -20,8 +20,8 @@
 
    <nav>
      <ul>
+      <li><a href="#portfolio">Portfolio</a></li>
        <li><a href="#aboutme">About Me</a></li>
-       <li><a href="#portfolio">Portfolio</a></li>
        <li><a href="#resume">Resume</a></li>
        <li><a href="#contact">Contact</a></li>
        <li><a href="https://github.com/kjackson206">GitHub</a></li>
@@ -41,46 +41,84 @@
     </div>
   </section>
 
-  <!-- Section 2: About Me -->
-  <section class="aboutme" id="aboutme">
-    <h3>About Me</h3>
-
-      <img src="assets/images/kj-image-resume.jpg" alt="Katherine Jackson's photo" class="headshot" >
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur similique laudantium reprehenderit hic laboriosam cum quas quia nisi quis magnam numquam sapiente, incidunt dolore, pariatur, iure minima molestias laborum doloremque
-      </p>
-
-    <h4>Technologies I've Worked With</h4>
-
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio aut fugiat voluptatum nulla, quaerat, nobis beatae animi dolore necessitatibus delectus dolor at tempore libero minima voluptates ea, laboriosam ipsa maxime!
-      </p>
-
-    <h4>Hobbies and Interests</h4>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ad eius qui quisquam neque, dolores fuga, velit quidem ipsa, at ipsam hic voluptas id illum amet. Possimus eos accusantium aperiam
-      </p>
-  </section>
-
   <!-- Section 2: Portfolio -->
   <section class="portfolio" id="portfolio">
-    <h3>Portfolio</h3>
+    <div> 
+    <h2>Portfolio</h2>
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quasi perferendis ad ea corporis libero facilis obcaecati omnis magni, corrupti sit, aliquid reiciendis quas atque temporibus recusandae veritatis cum mollitia?
-    </p>
+    <div class="coderefactor">
+    <h3>Code Refactor</h3>
+
+      <img src="assets/images/code-refactor-screenshot.png" alt="Code Refactor Screenshot" id="coderefactorimg">
+
+      <p>In this assignment, we were given broken code that was semantically incorrect according to HTML5 requirements. I worked solo for 3 days to ensure that the HTML was not broken, semantically correct, and that the CSS flowed in sync with the HTML.
+      </p>
+
+    </div>
 
   </section>
+
+<!-- Section 2: About Me -->
+<section class="aboutme" id="aboutme">
+ <div>
+  <h2>About Me</h2>
+
+  <img src="assets/images/kj-image-resume.jpg" alt="Katherine Jackson's photo" id="headshot">
+
+  <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur similique laudantium reprehenderit hic
+    laboriosam cum quas quia nisi quis magnam numquam sapiente, incidunt dolore, pariatur, iure minima molestias laborum
+    doloremque
+  </p>
+
+  <h3>Technologies I've Worked With</h3>
+
+  <p id="techinfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio aut fugiat voluptatum nulla, quaerat, nobis beatae
+    animi dolore necessitatibus delectus dolor at tempore libero minima voluptates ea, laboriosam ipsa maxime!
+  </p>
+
+  <h3>Hobbies and Interests</h3>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ad eius qui quisquam neque, dolores fuga, velit quidem
+    ipsa, at ipsam hic voluptas id illum amet. Possimus eos accusantium aperiam
+  </p>
+</section>
 
   <!-- Section 3: Resume -->
   <section class="resume" id="resume">
-    <h3>Resume</h3>
-    <!-- add links to a downloadable pdf and simple view of resume -->
+    <h2>Resume</h2>
+
+  <div
+    <button id="resumebutton" type="button">Download Resume</button>
+  </div>
+
   </section>
+
 
   <!-- Section 4: Contact -->
   <section class="contact" id=contact>
-    <h3>Contact</h3>
-<!-- create a form to fill out -->
-  </section>
+    <h2>Contact</h2>
+
+  <div class="contact-form">
+
+  <form action="/action_page.php">
+
+    <label for="fname">First Name</label>
+
+    <input type="text" id="fname" name="firstname" placeholder="First Name">
+
+    <label for="lname">Last Name</label>
+
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject">Subject</label>
+
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</div> 
+</section>
 
   <footer class="footer">
     <p>
