@@ -14,21 +14,21 @@
 
   <header>
 
-  <div class="container">
+    <div class="container">
 
-   <img src="assets/images/kj-logo.png" class="logo">
+      <img src="assets/images/kj-logo.png" alt="Logo" class="logo">
 
-   <nav>
-     <ul>
-      <li><a href="#portfolio">Portfolio</a></li>
-       <li><a href="#aboutme">About Me</a></li>
-       <li><a href="#resume">Resume</a></li>
-       <li><a href="#contact">Contact</a></li>
-       <li><a href="https://github.com/kjackson206">GitHub</a></li>
-       <li><a href="https://www.linkedin.com/in/katherine-jackson206/">LinkedIn</a></li>
-     </ul>
-   </nav>
-  </div>
+      <nav>
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/kjackson206">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/katherine-jackson206/">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
 
   </header>
 
@@ -36,89 +36,110 @@
   <!-- Section 1: Intro page -->
   <section id="hello">
     <div>
-    <h2>Hello!</h2>
-    <h1>My name is Katherine Jackson.<br> I'm a Full-Stack Developer.</h1>
+      <h2>Hello!</h2>
+      <h1>My name is Katherine Jackson.<br> I'm a Full-Stack Developer.</h1>
     </div>
   </section>
 
   <!-- Section 2: Portfolio -->
   <section class="portfolio" id="portfolio">
-    <div> 
-    <h2>Portfolio</h2>
+    <h3>Portfolio</h3>
 
     <div class="coderefactor">
-    <h3>Code Refactor</h3>
+      <h3>Code Refactor</h3>
 
-      <img src="assets/images/code-refactor-screenshot.png" alt="Code Refactor Screenshot" id="coderefactorimg">
+      <a href="https://kjackson206.github.io/Code-Refactor/">
+        <img src="assets/images/code-refactor-screenshot.png" alt="Code Refactor Screenshot" id="coderefactorimg">
+      </a>
 
-      <p>In this assignment, we were given broken code that was semantically incorrect according to HTML5 requirements. I worked solo for 3 days to ensure that the HTML was not broken, semantically correct, and that the CSS flowed in sync with the HTML.
+      <p>In this assignment, we were given broken code that was semantically incorrect according to HTML5 requirements.
+        I worked solo for 3 days to ensure that the HTML was not broken, semantically correct, and that the CSS flowed
+        in sync with the HTML.
       </p>
 
     </div>
 
   </section>
+  <br>
+  <br>
+  <br>
+  <!-- Section 2: About Me -->
+  <section class="aboutme" id="aboutme">
 
-<!-- Section 2: About Me -->
-<section class="aboutme" id="aboutme">
- <div>
-  <h2>About Me</h2>
+    <h3>About Me</h3>
 
-  <img src="assets/images/kj-image-resume.jpg" alt="Katherine Jackson's photo" id="headshot">
+    <img src="assets/images/kj-image-resume.jpg" alt="Katherine Jackson's photo" id="headshot">
 
-  <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur similique laudantium reprehenderit hic
-    laboriosam cum quas quia nisi quis magnam numquam sapiente, incidunt dolore, pariatur, iure minima molestias laborum
-    doloremque
-  </p>
 
-  <h3>Technologies I've Worked With</h3>
+    <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur similique laudantium reprehenderit
+      hic
+      laboriosam cum quas quia nisi quis magnam numquam sapiente, incidunt dolore, pariatur, iure minima molestias
+      laborum
+      doloremque
+    </p>
 
-  <p id="techinfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio aut fugiat voluptatum nulla, quaerat, nobis beatae
-    animi dolore necessitatibus delectus dolor at tempore libero minima voluptates ea, laboriosam ipsa maxime!
-  </p>
+    <h4>Technologies I've Worked With</h4>
 
-  <h3>Hobbies and Interests</h3>
+    <p id="techinfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio aut fugiat voluptatum nulla,
+      quaerat, nobis beatae
+      animi dolore necessitatibus delectus dolor at tempore libero minima voluptates ea, laboriosam ipsa maxime!
+    </p>
 
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ad eius qui quisquam neque, dolores fuga, velit quidem
-    ipsa, at ipsam hic voluptas id illum amet. Possimus eos accusantium aperiam
-  </p>
-</section>
+    <h4>Hobbies and Interests</h4>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ad eius qui quisquam neque, dolores fuga, velit
+      quidem
+      ipsa, at ipsam hic voluptas id illum amet. Possimus eos accusantium aperiam
+    </p>
+  </section>
 
   <!-- Section 3: Resume -->
   <section class="resume" id="resume">
-    <h2>Resume</h2>
+    <h3>Resume</h3>
 
-  <div
-    <button id="resumebutton" type="button">Download Resume</button>
-  </div>
+    <form action="assets/placeholder-resume.pdf" download="Katherine Jackson's Resume">
+      <input id="resumebutton" type="submit" value="View Resume" />
+    </form>
 
   </section>
 
 
   <!-- Section 4: Contact -->
   <section class="contact" id=contact>
-    <h2>Contact</h2>
+    <h3>Contact</h3>
 
-  <div class="contact-form">
+    <div class="contact-form">
 
-  <form action="/action_page.php">
+      <form action="/action_page.php">
 
-    <label for="fname">First Name</label>
+        <label for="fname">First Name</label>
 
-    <input type="text" id="fname" name="firstname" placeholder="First Name">
+        <input type="text" id="fname" name="firstname" placeholder="First Name">
 
-    <label for="lname">Last Name</label>
+        <br>
 
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="lname">Last Name</label>
 
-    <label for="subject">Subject</label>
+        <input type="text" id="lname" name="lastname" placeholder="Last Name">
 
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"></textarea>
+        <br>
+        <br>
 
-    <input type="submit" value="Submit">
-  </form>
+        <label for="subject">Questions</label>
 
-</div> 
-</section>
+        <br>
+
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"
+          maxlength="160"></textarea>
+
+        <br>
+        <br>
+
+        <input type="submit" id="submit" value="Submit">
+      </form>
+
+    </div>
+  </section>
 
   <footer class="footer">
     <p>
@@ -129,4 +150,5 @@
 
 
 </body>
+
 </html>
