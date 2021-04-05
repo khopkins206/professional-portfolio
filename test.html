@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/reset.css">
   <link rel="stylesheet" href="assets/test.css">
   <title>Professional Portfolio</title>
@@ -42,34 +44,51 @@
   </section>
 
   <!-- Section 2: Portfolio -->
-  <section class="portfolio" id="portfolio">
+  <section class="portfolio container" id="portfolio">
     <h3>Portfolio</h3>
 
-    <div class="coderefactor">
-      <h3>Code Refactor</h3>
+    <div class="row">
 
-        <a href="https://kjackson206.github.io/Code-Refactor/">
-          <img src="assets/images/code-refactor-screenshot.png" alt="Code Refactor Screenshot" id="coderefactorimg">
-        </a>
 
-        <p>In this assignment, we were given broken code that was semantically incorrect according to HTML5 requirements.
-        I worked solo for 3 days to ensure that the HTML was not broken, semantically correct, and that the CSS flowed
-        in sync with the HTML.
-        </p>
+      <div class="code-refactor-container card col-4" style="width: 18rem;">
+        <img src="assets/images/code-refactor-screenshot.png" class="card-img-top img-thumbnail"
+          alt="code-refactor-screenshot">
+        <div class="card-body">
+          <p class="card-text">In this assignment, we were given broken code that was semantically incorrect according
+            to
+            HTML5 requirements.
+            I worked solo for 3 days to ensure that the HTML was not broken, semantically correct, and that the CSS
+            flowed
+            in sync with the HTML.</p>
+        </div>
+
+      <div class="JS-quiz-container card col-4" style="width: 18rem;">
+          <img src="assets/images/js-quiz.png" class="card-img-top" alt="js quiz screenshot">
+          <div class="card-body">
+            <p class="card-text">I worked solo for 4 days to create a functioning quiz that times you and utilizes the
+              local storage to save your score and refer back to it at a later time. I used HTML, CSS, and Javascript to
+              create this project</p>
+          </div>
+      </div>
+
+      <div class="card col-4" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+      </div>
 
     </div>
-
   </section>
-  <br>
-  <br>
-  <br>
+
   <!-- Section 2: About Me -->
   <section class="aboutme" id="aboutme">
 
     <h3>About Me</h3>
-   
-       <img src="assets/images/kj-image-resume.jpg" alt="Katherine Jackson's photo" id="headshot">
-  
+
+    <img src="assets/images/kj-image-resume.jpg" alt="Katherine Jackson's photo" id="headshot">
+
 
     <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur similique laudantium reprehenderit
       hic
@@ -80,14 +99,14 @@
 
     <h4>Technologies I've Worked With</h4>
 
-     <p id="techinfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio aut fugiat voluptatum nulla,
+    <p id="techinfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio aut fugiat voluptatum nulla,
       quaerat, nobis beatae
       animi dolore necessitatibus delectus dolor at tempore libero minima voluptates ea, laboriosam ipsa maxime!
-     </p>
+    </p>
 
     <h4>Hobbies and Interests</h4>
 
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ad eius qui quisquam neque, dolores fuga, velit
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ad eius qui quisquam neque, dolores fuga, velit
       quidem
       ipsa, at ipsam hic voluptas id illum amet. Possimus eos accusantium aperiam
     </p>
@@ -97,9 +116,9 @@
   <section class="resume" id="resume">
     <h3>Resume</h3>
 
-      <form action="assets/placeholder-resume.pdf" download="Katherine Jackson's Resume">
-       <input id="resumebutton" type="submit" value="View Resume" />
-      </form>
+    <form action="assets/placeholder-resume.pdf" download="Katherine Jackson's Resume">
+      <input id="resumebutton" type="submit" value="View Resume" />
+    </form>
 
   </section>
 
@@ -129,7 +148,8 @@
 
         <br>
 
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px" maxlength="160"></textarea>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"
+          maxlength="160"></textarea>
 
         <br>
         <br>
@@ -147,7 +167,9 @@
   </footer>
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
