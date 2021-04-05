@@ -1,6 +1,15 @@
+:root {
+  --font: #2d2d2b;
+  --accentcolor: #ff0029;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Montserrat',
+    sans-serif;
+  ;
   font-weight: 300;
+  color: var(--font);
+  background-color: #f6f5f0;
 }
 
 .container {
@@ -25,7 +34,6 @@ nav {
 
 nav ul {
   font-size: 20px;
-  color: white;
 }
 
 nav li {
@@ -36,13 +44,14 @@ nav li {
 }
 
 nav a {
-  color: #444;
   text-decoration: none;
   text-transform: uppercase;
+  color: var(--font);
 }
 
 nav a:hover {
-  color: #000;
+  color: var(--accentcolor);
+  opacity: 80%;
 }
 
 nav a:before {
@@ -50,13 +59,13 @@ nav a:before {
   display: block;
   height: 5px;
   width: 100%;
-  background-color: #444;
+  background-color: var(--accentcolor);
 
   position: absolute;
   top: 0;
   width: 0%;
   transition: all ease-in-out 250ms;
-  opacity: 50%;
+  opacity: 80%;
 }
 
 nav a:hover::before {
@@ -80,8 +89,12 @@ nav a:hover::before {
   font-size: 40px;
 }
 
+#kjcolor {
+  color: var(--accentcolor);
+  opacity: 60%;
+}
+
 #portfolio,
-#aboutme,
 #resume,
 #contact {
   height: 100vh;
@@ -90,38 +103,25 @@ nav a:hover::before {
   display: block;
 }
 
-#portfolio h3 {
+h3 {
   font-size: 50px;
-  padding: 100px;
+  padding: 60px;
   text-align: center;
 }
 
-.coderefactor h4 {
-  font-size: 40px;
-  padding-bottom: 60px;
-  padding-top: 60px;
-  text-align: center;
-  /* padding-left: 150px; */
+h5 {
+  font-family: 'Montserrat',
+    sans-serif;
+  font-size: 30px;
+  color: var(--font);
+  padding-bottom: 8px;
 }
 
-#coderefactorimg {
-  /* padding-top: 50px;
-  padding-bottom: 60px;
-  height: 300px; */
+#aboutme {
+  height: 100vh;
+  width: 50vw;
+  margin: 0 auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.portfolio p {
-  font-size: 20px;
-  padding-top: 50px;
-}
-
-.aboutme h3 {
-  font-size: 50px;
-  /* padding-bottom: 100px; */
 }
 
 #headshot {
@@ -130,28 +130,31 @@ nav a:hover::before {
   padding-right: 50px;
 }
 
-.aboutme h3 {
-  font-size: 50px;
-  padding-top: 300px;
-}
+h4{
 
-#techinfo {
-  padding-top: 100px;
-}
-
-.resume h3 {
-  font-size: 50px;
 }
 
 #resumebutton {
   padding: 8px;
-  color: #444;
+  color: var(--font);
   background-color: transparent;
-  border: 2px solid #444;
+  border: 2px solid var(--font);
   border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+#resumebutton:hover {
+  color: var(--accentcolor);
+  opacity: 80%;
+  border: 2px solid var(--accentcolor);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.resumebtn {
   text-align: center;
+  padding-top: 30vh;
 }
 
 .contact h3 {
@@ -165,16 +168,24 @@ nav a:hover::before {
 }
 
 input {
+  padding: 5px;
   resize: none;
   margin-bottom: 5px;
   border-radius: 5px;
   border-width: 1px;
+  background-color: transparent;
+  font-family: 'Montserrat',
+  sans-serif;
 }
 
 textarea {
   resize: none;
   padding: 10px;
   border-radius: 5px;
+  background-color: transparent;
+  font-family: 'Montserrat',
+  sans-serif;
+  ;
 }
 
 footer {
@@ -182,7 +193,20 @@ footer {
   text-align: center;
 }
 
+.house {
+  max-height: 20px;
+}
+
+.phone{
+  max-height: 23px;
+}
+
+.email{
+  max-height: 20px;
+}
+
 @media screen and (max-width: 768px) {
+
   header,
   section {
     flex-direction: column;
@@ -191,6 +215,7 @@ footer {
 }
 
 @media screen and (max-width: 600) {
+
   header,
   section {
     flex-direction: column;
@@ -199,6 +224,7 @@ footer {
 }
 
 @media screen and (max-width: 480) {
+
   header,
   section {
     flex-direction: column;
